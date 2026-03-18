@@ -1,6 +1,8 @@
-package service;
+package service.impl;
 
-public class PixPagamento implements MetodoPagamento{
+import service.MetodoPagamento;
+
+public class PixPagamento implements MetodoPagamento {
     @Override
     public void pagar(double valor) {
         System.out.println("Pagamento via PIX: R$ " + valor);
